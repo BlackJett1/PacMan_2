@@ -195,7 +195,6 @@ class Player extends Mover
         lastX=x;
         lastY=y;
         if (x %20==0 && y%20==0 ||
-                /* Or if we're reversing*/
                 (desiredDirection=='L' && currDirection=='R')  ||
                 (desiredDirection=='R' && currDirection=='L')  ||
                 (desiredDirection=='U' && currDirection=='D')  ||
@@ -806,9 +805,9 @@ public class Board extends JPanel
             g.setFont(font);
             clearHighScores= false;
             if (demo)
-                g.drawString("DEMO MODE PRESS ANY KEY TO START A GAME\t High Score: "+highScore,20,10);
+                g.drawString("DEMO MODE PRESS ANY KEY TO START THE GAME\t HIGH SCORE: "+highScore,20,10);
             else
-                g.drawString("Score: "+(currScore)+"\t High Score: "+highScore,20,10);
+                g.drawString("SCORE: "+(currScore)+"\t HIGH SCORE: "+highScore,20,10);
         }
 
         boolean oops=false;
@@ -835,9 +834,9 @@ public class Board extends JPanel
             g.setColor(Color.YELLOW);
             g.setFont(font);
             if (demo)
-                g.drawString("DEMO MODE PRESS ANY KEY TO START A GAME\t High Score: "+highScore,20,10);
+                g.drawString("DEMO MODE PRESS ANY KEY TO START THE GAME\t HIGH SCORE: "+highScore,20,10);
             else
-                g.drawString("Score: "+(currScore)+"\t High Score: "+highScore,20,10);
+                g.drawString("SCORE: "+(currScore)+"\t HIGH SCORE: "+highScore,20,10);
             New++;
         }
         else if (New == 2)
@@ -922,9 +921,9 @@ public class Board extends JPanel
             g.setColor(Color.YELLOW);
             g.setFont(font);
             if (demo)
-                g.drawString("DEMO MODE PRESS ANY KEY TO START A GAME\t High Score: "+highScore,20,10);
+                g.drawString("DEMO MODE PRESS ANY KEY TO START THE GAME\t HIGH SCORE: "+highScore,20,10);
             else
-                g.drawString("Score: "+(currScore)+"\t High Score: "+highScore,20,10);
+                g.drawString("SCORE: "+(currScore)+"\t HIGH SCORE: "+highScore,20,10);
 
             if (player.pelletsEaten == 173)
             {
