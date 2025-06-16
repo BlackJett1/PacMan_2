@@ -16,7 +16,7 @@ public class Pacman implements MouseListener, KeyListener {
 
         JFrame f = new JFrame("Pacman - simplfied");
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        f.setSize(420, 460);
+        f.setSize(420, 470);
         f.setLayout(new BorderLayout());
 
         f.add(b, BorderLayout.CENTER);
